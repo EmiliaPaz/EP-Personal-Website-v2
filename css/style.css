@@ -1,0 +1,224 @@
+/*--------- General  ---------*/
+.box{
+	padding-top: 40px;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+p, li {
+	font-size: 15px;
+}
+
+.box h2{
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/* ============================== Navigation Bar  ==============================*/
+.navbar {
+	background-color: #1c2833 !important;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #fff;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+/*--------- Header  ---------*/
+.heading{
+	padding-top: 30px;
+	background-color: #1c2833;
+	font-family: 'IBM Plex Mono', monospace;
+}
+
+.header-picture{
+	padding-top: 50px;
+	text-align: right;
+}
+
+.header-picture img{
+	border: 2px solid #ffb300;
+	border-radius: 50%;
+	padding: 3px;
+}
+
+.header-info{
+	text-align: center;
+}
+
+.header-info h2{
+	font-size: 40px;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-top: 80px;
+	color: #fff;
+}
+
+.header-info h2 span{
+	font-weight: 800;
+	color: #ffb300;
+}
+
+.header-info h3{
+	font-size: 20px;
+	color: #fff;
+	padding-bottom: 60px;
+}
+
+.header p{
+	color: #fff;
+}
+
+.links{
+	text-align: center;
+}
+
+.links img{
+	width: 35px;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.links h4{
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+
+/*--------- Subtitle  ---------*/
+.subtitle h1{
+	font-size: 22px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.subtitle h1 span {
+    background-color: white;
+    padding-right: 10px;
+}
+
+.subtitle h1:after {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid #c9c9c9;
+    z-index: -1;
+}
+
+/*--------- Info  ---------*/
+
+.info{
+	padding-left: 50px;
+}
+
+.info h3{
+	font-size: 15px;
+	font-style: italic;
+}
+
+.info h4{
+	font-size: 12px;
+}
+
+.info p span{
+	font-weight: 600;
+	display: inline-block;
+	min-width: 80px;
+}
+
+.info p{
+	line-height: 14px;
+}
+
+/* ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+
+li::before {
+	content: "• ";
+	color: #ffb300;
+} */
+
+/*--------- Timeline  ---------*/
+.timeline-info ul {
+  list-style: none;
+  padding-left: 5px;
+  margin: 0;
+}
+
+.timeline-info li {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+
+.timeline-info li::before {
+	content: "- ";
+	color: #c9c9c9;
+}
+
+.timeline {
+    border-left-width: 2px;
+    border-left-style: solid;
+    margin-left: calc(1rem - 2px);
+    padding-left: 25px;
+    position: relative;
+	border-color: #c9c9c9;
+}
+
+.timeline__item {
+    position: relative;
+	margin-bottom: 25px;
+}
+
+.timeline__point {
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: -31px;
+    top: 3px;
+    border-radius: 50%;
+    background: #f8bb10;
+}
+
+.timeline__end {
+    height: 1px;
+    width: 16px;
+    position: absolute;
+    left: -9px;
+    bottom: 0;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.t-timeline__point {
+    box-shadow: 0 0 0 6px #fff;
+}
+
+.timeline-main h4{
+	color: #a9a9a9;
+	margin-bottom: 0px;
+}
+
+.timeline-main h3 {
+	margin-top: -8px;
+}
+
+.timeline-info{
+	line-height: 20px;
+}
