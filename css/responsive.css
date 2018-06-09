@@ -1,4 +1,9 @@
 
+@viewport {
+   width: device-width;
+   zoom:1;
+}
+
 /* Small Devices */
 @media only screen and (max-width: 767px){
 

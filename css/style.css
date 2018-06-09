@@ -17,6 +17,7 @@ p, li {
 /* ============================== Navigation Bar  ==============================*/
 .navbar {
 	background-color: #1c2833 !important;
+	font-family: 'IBM Plex Mono', monospace;
 }
 
 .navbar-custom .nav-item.active .nav-link,
