@@ -1,4 +1,4 @@
-/*--------- General  ---------*/
+/* ============================== General  ==============================*/
 .box{
 	padding-top: 40px;
 	font-family: 'IBM Plex Mono', monospace;
@@ -29,7 +29,7 @@ p, li {
 	-o-transition: all 1s;
 }
 
-/*--------- Header  ---------*/
+/* ============================== Header  ==============================*/
 .heading{
 	padding-top: 30px;
 	background-color: #1c2833;
@@ -90,8 +90,7 @@ p, li {
 	margin-bottom: 30px;
 }
 
-
-/*--------- Subtitle  ---------*/
+/* ============================== Subtitle  ==============================*/
 .subtitle h1{
 	font-size: 22px;
 	font-weight: 700;
@@ -115,7 +114,7 @@ p, li {
     z-index: -1;
 }
 
-/*--------- Info  ---------*/
+/* ============================== Info  ==============================*/
 
 .info{
 	padding-left: 50px;
@@ -140,23 +139,7 @@ p, li {
 	line-height: 14px;
 }
 
-/* ul {
-  list-style: none;
-  padding-left: 20px;
-  margin: 0;
-}
-
-li {
-  padding-left: 1em;
-  text-indent: -.7em;
-}
-
-li::before {
-	content: "• ";
-	color: #ffb300;
-} */
-
-/*--------- Timeline  ---------*/
+/* ============================== Timeline  ==============================*/
 .timeline-info ul {
   list-style: none;
   padding-left: 5px;
@@ -222,4 +205,34 @@ li::before {
 
 .timeline-info{
 	line-height: 20px;
+}
+
+/* ============================== Portfolio ==============================*/
+.boxed {
+	border: 3px solid #ffb300;
+	/* border: 5px solid #ffb300; */
+	width: 250px;
+	height: 110px;
+	padding: 25px;
+	margin: 25px;
+	text-align: center;
+}
+
+.boxed a{
+	text-decoration: none;
+	color: black;
+}
+
+.boxed_description{
+	opacity:0;
+	font-size: 12px;
+}
+
+.boxed:hover {
+	background-color: #ffb300;
+}
+
+.boxed:hover .boxed_description{
+	background-color: #ffb300;
+	opacity: 1;
 }
