@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.form-container {
+  background-color: $fill-primary;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+.form-input {
+  background-color: $fill-secondary;
+  color: $text-primary;
+  padding: 20px;
+  border: 0;
+  font-size: $body-font-size;
+}
+
+.form-input:focus {
+  background: $fill-quaternary;
+  border-color: $fill-quaternary;
+}
+
+.form-submit {
+  background: $accent-primary;
+  border-color: $accent-primary;
+  width: 100%;
+}
+
+.form-submit:hover {
+  background: $accent-primary;
+  border-color: $accent-primary;
+  opacity: 0.8;
+  cursor: pointer;
+
+}

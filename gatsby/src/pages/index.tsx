@@ -1,21 +1,31 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Row, Col } from 'react-bootstrap'
 
-import Page from '../components/Page'
-import Container from '../components/Container'
-import IndexLayout from '../layouts'
+import PageLayout from '../layouts/pageLayout/pageLayout'
+
+import face from '../assets/face.png'
 
 const IndexPage = () => (
-  <IndexLayout>
-    <Page>
-      <Container>
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <Link to="/page-2/">Go to page 2</Link>
-      </Container>
-    </Page>
-  </IndexLayout>
+  <PageLayout pageTitle="">
+    <Row className="d-flex flex-wrap position-absolute w-100 h-100 align-items-center align-content-center">
+      <Col md={{ span: 6, offset: 1 }}>
+        <Row>
+          <h1>Hi,</h1>
+        </Row>
+        <Row>
+          <h1>
+            I'm <span> Emilia Paz </span>
+          </h1>
+        </Row>
+        <Row>
+          <h5>Computer Scientist &nbsp; | &nbsp; Design Enthusiast &nbsp; | &nbsp; Active Learner</h5>
+        </Row>
+      </Col>
+      <Col md={4}>
+        <img src={face} alt="icon" />
+      </Col>
+    </Row>
+  </PageLayout>
 )
 
 export default IndexPage

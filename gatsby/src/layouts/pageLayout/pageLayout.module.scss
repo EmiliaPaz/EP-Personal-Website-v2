@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+
+.container {
+  background-color: $background-primary;
+}
+
+.sidebarCol {
+  background-color: $background-secondary;
+}
+
+.contentCol {
+  img {
+    width: 75%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto', Sans-Serif;
+  color: $text-primary;
+}
+
+h5,
+p {
+  font-family: 'Cabin', Sans-Serif;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $xl-font-size;
+  line-height: $xl-line-height;
+}
+
+h1 span {
+  text-decoration: underline;
+  text-decoration-color: $accent-primary;
+}
+
+h2 {
+  font-size: $l-font-size;
+  line-height: $l-line-height;
+}
+
+h3 {
+  font-size: $m-font-size;
+  line-height: $m-line-height;
+}
+
+h4 {
+  font-size: $s-font-size;
+  line-height: $s-line-height;
+}
+
+h5 {
+  font-size: $xs-font-size;
+  line-height: $xs-line-height;
+  color: $text-secondary;
+}
+
+p {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}
+
+/* Smartphones (portrait and landscape)  */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  h1 {
+    font-size: $mobile-xl-font-size;
+    line-height: $mobile-xl-line-height;
+  }
+
+  h2 {
+    font-size: $mobile-l-font-size;
+    line-height: $mobile-l-line-height;
+  }
+
+  h3 {
+    font-size: $mobile-m-font-size;
+    line-height: $mobile-m-line-height;
+  }
+
+  h4 {
+    font-size: $mobile-s-font-size;
+    line-height: $mobile-s-line-height;
+  }
+
+  h5 {
+    font-size: $mobile-xs-font-size;
+    line-height: $mobile-xs-line-height;
+  }
+
+  p {
+    font-size: $mobile-body-font-size;
+    line-height: $mobile-body-line-height;
+  }
+}
+
+
+/* iPads (portrait and landscape)  */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+}

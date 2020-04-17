@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  min-height: 100vh;
+  text-align: center
+}
+
+.icon {
+  color: $fill-primary;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  text-align: center;
+}
+
+.icon:hover {
+  color: $accent-secondary;
+}

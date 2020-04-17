@@ -1,0 +1,209 @@
+@import '../../styles/variables.scss';
+
+.timeline {
+  overflow: hidden;
+  position: relative
+}
+
+// .timeline:after,
+// .timeline:before {
+//   content: "";
+//   display: block;
+//   width: 100%;
+//   clear: both
+// }
+
+.timeline:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: $material-fill-primary;
+  position: absolute;
+  top: 30px;
+  left: 50%
+}
+
+.entry {
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+  position: relative
+}
+
+.timeline-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: $material-text-primary;
+  border: 3px solid $accent-primary;
+  position: absolute;
+  top: 5.5%;
+  right: -17.5px
+}
+
+.title {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0 50px 50px 0;
+  background: $accent-primary;
+  text-align: center;
+  position: relative;
+
+  h4 {
+    color: $background-secondary;
+  }
+}
+
+.title:before {
+  content: "";
+  border-top: 35px solid rgba($accent-primary, 0.8);
+  border-left: 35px solid transparent;
+  position: absolute;
+  bottom: -35px;
+  left: 0
+}
+
+.content {
+  padding: 30px 20px;
+  margin: 0 45px 0 35px;
+  background: $material-fill-primary;
+
+  h5,
+  p {
+    color: $material-text-primary;
+  }
+
+  .location {
+    font-weight: 800;
+    margin: 0 0 10px
+  }
+
+  .date {
+    font-style: italic;
+  }
+}
+
+
+.entry:nth-child(2n) {
+  padding: 0 0 0 30px
+}
+
+.entry:nth-child(2n) .timeline-icon {
+  right: auto;
+  left: -14.5px
+}
+
+.entry:nth-child(2n) .title {
+  border-radius: 50px 0 0 50px;
+  background: $accent-secondary;
+}
+
+.entry:nth-child(2n) .title:before {
+  border-left: none;
+  border-right: 35px solid transparent;
+  left: auto;
+  right: 0
+}
+
+.entry:nth-child(2n) .content {
+  text-align: right;
+  margin: 0 35px 0 45px
+}
+
+.entry:nth-child(2) {
+  margin-top: 170px
+}
+
+.entry:nth-child(odd) {
+  margin: -175px 0 0
+}
+
+.entry:nth-child(even) {
+  margin-bottom: 80px
+}
+
+.entry:first-child,
+.entry:last-child:nth-child(even) {
+  margin: 0
+}
+
+.entry:nth-child(2n) .timeline-icon {
+  border-color: $accent-secondary;
+}
+
+.entry:nth-child(2n) .title:before {
+  border-top-color: rgba($accent-secondary, 0.8);
+}
+
+// .entry:nth-child(3n) .timeline-icon {
+//   border-color: #8a5ec1
+// }
+
+// .entry:nth-child(3n) .title {
+//   background: #8a5ec1
+// }
+
+// .entry:nth-child(3n) .title:before {
+//   border-top-color: #a381cf
+// }
+
+// .entry:nth-child(4n) .timeline-icon {
+//   border-color: #f98d9c
+// }
+
+// .entry:nth-child(4n) .title {
+//   background: #f98d9c
+// }
+
+// .entry:nth-child(4n) .title:before {
+//   border-top-color: #f2aab3
+// }
+
+@media only screen and (max-width:767px) {
+  .timeline {
+    overflow: visible
+  }
+
+  .timeline:before {
+    top: 0;
+    left: 0
+  }
+
+  .entry:nth-child(2),
+  .entry:nth-child(even),
+  .entry:nth-child(odd) {
+    margin: 0
+  }
+
+  .entry {
+    width: 100%;
+    float: none;
+    padding: 0 0 0 30px;
+    margin-bottom: 20px !important
+  }
+
+  .entry:last-child {
+    margin: 0 !important
+  }
+
+  .timeline-icon {
+    right: auto;
+    left: -14.5px
+  }
+
+  .title {
+    border-radius: 50px 0 0 50px
+  }
+
+  .title:before {
+    border-left: none;
+    border-right: 35px solid transparent;
+    left: auto;
+    right: 0
+  }
+
+  .content {
+    margin: 0 35px 0 45px
+  }
+}

@@ -1,9 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 
-import Page from '../components/Page'
-import Container from '../components/Container'
-import IndexLayout from '../layouts'
+import PageLayout from '../layouts/pageLayout/pageLayout'
 
 interface PageTemplateProps {
   data: {
@@ -28,15 +26,11 @@ interface PageTemplateProps {
 }
 
 const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => (
-  <IndexLayout>
-    <Page>
-      <Container>
-        <h1>{data.markdownRemark.frontmatter.title}</h1>
-        {/* eslint-disable-next-line react/no-danger */}
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      </Container>
-    </Page>
-  </IndexLayout>
+  <PageLayout>
+    <h1>{data.markdownRemark.frontmatter.title}</h1>
+    {/* eslint-disable-next-line react/no-danger */}
+    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+  </PageLayout>
 )
 
 export default PageTemplate

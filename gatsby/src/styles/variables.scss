@@ -1,0 +1,67 @@
+$backgroundColor: #303841;
+$backgroundColor2: #3a4750;
+$accentColor: #00adb5;
+$lightColor: #eeeeee;
+$lightColor2: #ffffff;
+
+$background-primary: #000000;
+$background-secondary: #1c1c1e;
+$background-tertiary: #2c2c2c;
+
+$text-primary: #ffffff;
+$text-secondary: rgba(#ebebf5, 0.6);
+$text-tertiary: rgba(#ebebf5, 0.3);
+$text-quaternary: rgba(#ebebf5, 0.18);
+
+$separator-line-opaque: #38383a;
+$separator-line-nonopaque: rgba(#545458, 0.65);
+
+$fill-primary: rgba(#787880, 0.36);
+$fill-secondary: rgba(#787880, 0.32);
+$fill-tertiary: rgba(#787880, 0.24);
+$fill-quaternary: rgba(#787880, 0.18);
+
+$accent-primary: #ff9f0a;
+$accent-secondary: #ffd60a;
+$accent-tertiary: #ff453a;
+
+$material-fill-primary: rgba(#ffffff, 0.33);
+$material-fill-opacity-primary: 1;
+$material-fill-secondary: rgba(#d9d9d9, 0.3);
+$material-fill-opacity-secondary: 0.42;
+
+$material-text-primary: rgba(#ffffff, 0.96);
+$material-text-secondary: rgba(#ffffff, 0.55);
+
+/* Desktop */
+$body-font-size: 1em;
+$body-line-height: 1.375em;
+$xl-font-size: 4em;
+$xl-line-height: 1.2em;
+$l-font-size: 3em;
+$l-line-height: 1.05em;
+$m-font-size: 2.25em;
+$m-line-height: 1.25em;
+$s-font-size: 1.75em;
+$s-line-height: 1.25em;
+$xs-font-size: 1.125em;
+$xs-line-height: 1.222em;
+
+/* Mobile */
+$mobile-body-font-size: 1em;
+$mobile-body-line-height: 1.375em;
+$mobile-xl-font-size: 4em;
+$mobile-xl-line-height: 1.2em;
+$mobile-l-font-size: 2em;
+$mobile-l-line-height: 1.25em;
+$mobile-m-font-size: 1.625em;
+$mobile-m-line-height: 1.15em;
+$mobile-s-font-size: 1.375em;
+$mobile-s-line-height: 1.136em;
+$mobile-xs-font-size: 1.125em;
+$mobile-xs-line-height: 1.111em;
+
+:export {
+  accentPrimary: $accent-primary;
+  accentSecondary: $accent-secondary;
+}

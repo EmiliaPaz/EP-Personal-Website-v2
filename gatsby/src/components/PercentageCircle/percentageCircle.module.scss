@@ -1,0 +1,44 @@
+@import '../../styles/variables.scss';
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 50%;
+}
+
+.circle-bg {
+  stroke: $fill-primary;
+  fill: none;
+  stroke-width: 3.8;
+}
+
+.circle-intermediate {
+  stroke: $accent-primary;
+}
+
+.circle-beginner {
+  stroke: $accent-tertiary;
+}
+
+.circle-advanced {
+  stroke: $accent-secondary;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circle-label {
+  fill: $text-secondary;
+  font-size: 0.35em;
+  text-anchor: middle;
+}
