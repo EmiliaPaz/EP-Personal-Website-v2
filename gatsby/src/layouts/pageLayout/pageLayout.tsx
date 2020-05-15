@@ -42,14 +42,25 @@ const PageLayout: React.FC<pageLayoutProps> = ({ children, pageTitle }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords }
           ]}
         />
+        <div className={[styles['page'], 'wrapper d-flex align-items-stretch'].join(' ')}>
+          <Sidebar />
+          <Container>
+            <Row>
+              <Col md={12}>
+                <h2> {pageTitle} </h2>
+              </Col>
+            </Row>
+            {children}
+          </Container>
+        </div>
 
-        <Container fluid className={styles.container}>
+        {/* <Container fluid classNameName={styles.container}>
           <Row>
-            <Col className={styles.sidebarCol} md={1}>
+            <Col classNameName={styles.sidebarCol} md={1}>
               <Sidebar />
             </Col>
 
-            <Col className={styles.contentCol} md={11}>
+            <Col classNameName={styles.contentCol} md={11}>
               <Row>
                 <Col md={12}>
                   <h2> {pageTitle} </h2>
@@ -58,7 +69,7 @@ const PageLayout: React.FC<pageLayoutProps> = ({ children, pageTitle }) => (
               {children}
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </>
     )}
   />

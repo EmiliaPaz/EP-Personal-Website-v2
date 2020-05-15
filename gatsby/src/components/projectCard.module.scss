@@ -6,28 +6,49 @@
 }
 
 .card:hover {
-  background-color: $material-fill-primary;
-  opacity: $material-fill-opacity-primary;
+  background-color: $material-fill-secondary;
   transition: all 0.50s linear;
 
   img {
-    transform: scale(1);
-    opacity: 0.75;
+    transform: scale(0.9);
+    opacity: 0.2;
   }
 
   .card-content-text {
     visibility: visible;
   }
+
+  .card-content-date {
+    font-style: italic;
+    transform: scale(0.9);
+  }
+
+  ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0px;
+  }
+
 }
 
 
 .card {
-  background-color: $material-fill-secondary;
-  opacity: $material-fill-opacity-secondary;
+  background-color: $material-fill-primary;
+  opacity: $material-fill-opacity-primary;
   text-align: center;
   display: block;
 
   img {
-    transform: scale(0.75);
+    transform: scale(0.6);
+    width: 75%;
+    position: absolute;
+    left: 2.5em;
+    top: 0;
   }
+
+  height: auto;
+
 }
+
+.card-content {}

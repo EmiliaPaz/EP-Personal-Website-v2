@@ -22,7 +22,7 @@ const IndexPage = () => (
         </Row>
       </Col>
       <Col md={4}>
-        <img src={face} alt="icon" />
+        <img src={face} alt="icon" width="75%" />
       </Col>
     </Row>
   </PageLayout>

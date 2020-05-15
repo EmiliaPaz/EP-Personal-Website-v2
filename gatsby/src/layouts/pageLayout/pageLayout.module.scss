@@ -1,17 +1,7 @@
 @import '../../styles/variables.scss';
 
-.container {
+.page {
   background-color: $background-primary;
-}
-
-.sidebarCol {
-  background-color: $background-secondary;
-}
-
-.contentCol {
-  img {
-    width: 75%;
-  }
 }
 
 h1,
@@ -23,7 +13,8 @@ h4 {
 }
 
 h5,
-p {
+p,
+li {
   font-family: 'Cabin', Sans-Serif;
   color: $text-primary;
 }
@@ -59,7 +50,8 @@ h5 {
   color: $text-secondary;
 }
 
-p {
+p,
+li {
   font-size: $body-font-size;
   line-height: $body-line-height;
 }
