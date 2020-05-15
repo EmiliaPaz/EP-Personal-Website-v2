@@ -1,0 +1,22 @@
+/* Small Devices */
+@media only screen and (max-width: 767px){
+
+}
+
+
+/* Small Devices and Tablets */
+@media only screen and (max-width: 768px){
+	.header-picture{
+		display: none;
+	}
+
+}
+/* Medium Devices, Desktop  */
+@media only screen and (max-width: 992px){
+
+}
+
+/* Large Devices, Wide Screen  */
+@media only screen and (max-width: 1200px){
+
+}
