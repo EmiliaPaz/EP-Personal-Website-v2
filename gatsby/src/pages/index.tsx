@@ -7,7 +7,7 @@ import face from '../assets/face.png'
 
 const IndexPage = () => (
   <PageLayout pageTitle="">
-    <Row className="d-flex flex-wrap position-absolute w-100 h-100 align-items-center align-content-center">
+    <Row className="d-flex flex-wrap h-100 align-items-center align-content-center">
       <Col md={{ span: 6, offset: 1 }}>
         <Row>
           <h1>Hi,</h1>

@@ -32,6 +32,8 @@ h1 span {
 h2 {
   font-size: $l-font-size;
   line-height: $l-line-height;
+  padding-top: $l-line-height;
+  padding-bottom: 0.2*$l-line-height;
 }
 
 h3 {
@@ -45,8 +47,8 @@ h4 {
 }
 
 h5 {
-  font-size: $xs-font-size;
-  line-height: $xs-line-height;
+  font-size: $s-font-size;
+  line-height: $s-line-height;
   color: $text-secondary;
 }
 
@@ -79,8 +81,8 @@ li {
   }
 
   h5 {
-    font-size: $mobile-xs-font-size;
-    line-height: $mobile-xs-line-height;
+    font-size: $mobile-s-font-size;
+    line-height: $mobile-s-line-height;
   }
 
   p {

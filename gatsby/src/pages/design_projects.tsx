@@ -2,7 +2,9 @@ import * as React from 'react'
 import { Row, Col, CardColumns } from 'react-bootstrap'
 
 import PageLayout from '../layouts/pageLayout/pageLayout'
-import ProjectCard from '../components/ProjectCard'
+
+import { Card } from 'react-bootstrap'
+import styles from '../components/projectCard.module.scss'
 
 import hk_1day from '../assets/design/hackku_1day.gif'
 import hk_2days from '../assets/design/hackku_2days.gif'
@@ -24,9 +26,9 @@ export default class DesignProjects extends React.Component {
     let projectsHTML: any = []
     this.projects.forEach(project => {
       projectsHTML.push(
-        <Col md={3}>
-          <img src={project}></img>
-        </Col>
+        <Card>
+          <Card.Img src={project}/>
+        </Card>
       )
     })
     return projectsHTML
@@ -35,7 +37,11 @@ export default class DesignProjects extends React.Component {
   render() {
     return (
       <PageLayout pageTitle="Projects">
-        <Row>{this.renderProjects()}</Row>
+        <Row>
+          <Col md={12}>
+            <CardColumns> {this.renderProjects()} </CardColumns>
+          </Col>
+        </Row>
       </PageLayout>
     )
   }

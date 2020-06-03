@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Row, Col, CardColumns } from 'react-bootstrap'
 
 import PageLayout from '../layouts/pageLayout/pageLayout'
-import ProjectCard from '../components/ProjectCard'
+import ProjectCard from '../components/ProjectCard/ProjectCard'
 
 import applican from '../assets/applican.png'
 import arboretum from '../assets/arboretum.png'

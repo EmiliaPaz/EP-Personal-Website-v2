@@ -38,28 +38,26 @@ $body-font-size: 1em;
 $body-line-height: 1.375em;
 $xl-font-size: 4em;
 $xl-line-height: 1.2em;
-$l-font-size: 3em;
-$l-line-height: 1.05em;
-$m-font-size: 2.25em;
-$m-line-height: 1.25em;
-$s-font-size: 1.75em;
-$s-line-height: 1.25em;
-$xs-font-size: 1.125em;
-$xs-line-height: 1.222em;
+$l-font-size: 2.25em;
+$l-line-height: 1.25em;
+$m-font-size: 1.50em;
+$m-line-height: 1.15em;
+$s-font-size: 1.125em;
+$s-line-height: 1.222em;
+
+
 
 /* Mobile */
 $mobile-body-font-size: 1em;
 $mobile-body-line-height: 1.375em;
 $mobile-xl-font-size: 4em;
 $mobile-xl-line-height: 1.2em;
-$mobile-l-font-size: 2em;
-$mobile-l-line-height: 1.25em;
-$mobile-m-font-size: 1.625em;
-$mobile-m-line-height: 1.15em;
-$mobile-s-font-size: 1.375em;
-$mobile-s-line-height: 1.136em;
-$mobile-xs-font-size: 1.125em;
-$mobile-xs-line-height: 1.111em;
+$mobile-l-font-size: 1.625em;
+$mobile-l-line-height: 1.15em;
+$mobile-m-font-size: 1.375em;
+$mobile-m-line-height: 1.136em;
+$mobile-s-font-size: 1.125em;
+$mobile-s-line-height: 1.111em;
 
 :export {
   accentPrimary: $accent-primary;
