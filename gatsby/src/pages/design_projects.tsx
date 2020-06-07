@@ -4,7 +4,6 @@ import { Row, Col, CardColumns } from 'react-bootstrap'
 import PageLayout from '../layouts/pageLayout/pageLayout'
 
 import { Card } from 'react-bootstrap'
-import styles from '../components/projectCard.module.scss'
 
 import hk_1day from '../assets/design/hackku_1day.gif'
 import hk_2days from '../assets/design/hackku_2days.gif'
@@ -36,7 +35,7 @@ export default class DesignProjects extends React.Component {
 
   render() {
     return (
-      <PageLayout pageTitle="Projects">
+      <PageLayout pageTitle="Design Projects">
         <Row>
           <Col md={12}>
             <CardColumns> {this.renderProjects()} </CardColumns>

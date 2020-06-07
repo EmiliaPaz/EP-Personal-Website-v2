@@ -3,6 +3,12 @@
 .page {
   background-color: $background-primary;
 }
+.large-screen {
+  display: block;
+}
+.small-screen {
+  display: none;
+}
 
 h1,
 h2,
@@ -60,6 +66,13 @@ li {
 
 /* Smartphones (portrait and landscape)  */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .large-screen {
+    display: none;
+  }
+  .small-screen {
+    display: block;
+  }
+
   h1 {
     font-size: $mobile-xl-font-size;
     line-height: $mobile-xl-line-height;

@@ -42,3 +42,10 @@
   font-size: 0.35em;
   text-anchor: middle;
 }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .percentage-cirlce {
+    width: 50%;
+  }
+}

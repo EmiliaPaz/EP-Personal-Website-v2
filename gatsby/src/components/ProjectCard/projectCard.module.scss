@@ -2,7 +2,18 @@
 
 .card-content .card-content-text {
   visibility: hidden;
+}
 
+.card {
+  .card-content-date {
+    font-style: italic;
+  }
+  ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    padding: 0;
+    margin: 0px;
+  } 
 }
 
 .card:hover {
@@ -19,16 +30,9 @@
   }
 
   .card-content-date {
-    font-style: italic;
     transform: scale(0.9);
   }
 
-  ul {
-    list-style-position: inside;
-    list-style-type: circle;
-    padding: 0;
-    margin: 0px;
-  }
 
 }
 
@@ -51,4 +55,14 @@
 
 }
 
-.card-content {}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .card {
+    .card-content .card-content-text {
+      visibility: visible;
+    }
+    img {
+      transform: scale(0.9);
+      opacity: 0.2;
+    }
+  }
+}

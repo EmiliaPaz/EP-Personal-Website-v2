@@ -13,9 +13,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => (
   <Navbar collapseOnSelect expand="lg" className={styles.wrapper}>
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-    <Navbar.Collapse id="responsive-navbar-nav">
-      <Nav className="flex-column">
+    {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse id="responsive-navbar-nav"> */}
+      {/* <Nav className="flex-column"> */}
+      <Nav className={styles.sidebar}>
         <Link to="/about">
           <FontAwesomeIcon icon={faUser} size="lg" className={styles.icon} />
         </Link>
@@ -35,7 +36,8 @@ const Sidebar = () => (
           <FontAwesomeIcon icon={faEnvelope} size="lg" className={styles.icon} />
         </Link>
       </Nav>
-    </Navbar.Collapse>
+    {/* </Navbar.Collapse> */}
   </Navbar>
+  
 )
 export default Sidebar

@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Emilia Paz',
     description: 'Personal website of Emilia Paz',
-    keywords: 'emiliapaz, softwarenegineer, computerscience',
+    keywords: 'emiliapaz, softwareengineer, computerscience',
     siteUrl: 'https://emiliapaz.github.io',
     author: {
       name: 'Emilia Paz',
@@ -12,8 +12,7 @@ module.exports = {
       email: 'emipazojeda@gmail.com'
     }
   },
-  plugins: [
-    {
+  plugins: [{
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
@@ -23,8 +22,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
               wrapperStyle: 'margin-bottom: 1rem'
@@ -67,8 +65,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        fonts: [
-          {
+        fonts: [{
             family: `Karla`,
             variants: [`400`, `400i`, `700`, `700i`]
           },

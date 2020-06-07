@@ -42,34 +42,37 @@ const PageLayout: React.FC<pageLayoutProps> = ({ children, pageTitle }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords }
           ]}
         />
-        <div className={[styles['page'], 'wrapper d-flex align-items-stretch'].join(' ')}>
-          <Sidebar />
-          <Container>
-            <Row>
-              <Col md={12}>
-                <h2> {pageTitle} </h2>
-              </Col>
-            </Row>
-            {children}
-          </Container>
-        </div>
 
-        {/* <Container fluid classNameName={styles.container}>
-          <Row>
-            <Col classNameName={styles.sidebarCol} md={1}>
-              <Sidebar />
-            </Col>
-
-            <Col classNameName={styles.contentCol} md={11}>
+        <div className={styles['large-screen']}>
+          <div className={[styles['page'], 'wrapper d-flex align-items-stretch'].join(' ')}>
+            <Sidebar />
+            <Container>
               <Row>
                 <Col md={12}>
                   <h2> {pageTitle} </h2>
                 </Col>
               </Row>
               {children}
-            </Col>
-          </Row>
-        </Container> */}
+            </Container>
+          </div>
+        </div>
+
+        <div className={styles['small-screen']}>
+          <div className={[styles['page'], 'wrapper d-flex align-items-stretch'].join(' ')}>
+            <Container>
+              <Row>
+                <Sidebar />
+              </Row>
+              <Row>
+                <Col md={12}>
+                  <h2> {pageTitle} </h2>
+                </Col>
+              </Row>
+              {children}
+            </Container>
+          </div>
+        </div>
+
       </>
     )}
   />

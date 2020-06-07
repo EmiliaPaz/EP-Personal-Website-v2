@@ -3,7 +3,12 @@
 .wrapper {
   background-color: $background-secondary;
   min-height: 100vh;
-  text-align: center
+  text-align: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column !important;
 }
 
 .icon {
@@ -15,4 +20,20 @@
 
 .icon:hover {
   color: $accent-secondary;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .wrapper {
+    min-height: 2vh;
+    width: 100%;
+    justify-content: center;
+  }
+  .sidebar {
+    flex-direction: row!important;
+  }
+  .icon {
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    text-align: center;
+  }
 }
