@@ -22,15 +22,21 @@
   color: $accent-secondary;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   .wrapper {
     min-height: 2vh;
     width: 100%;
     justify-content: center;
+
+    position: fixed;
+    top: 0px;
+    z-index: 1;
   }
+
   .sidebar {
-    flex-direction: row!important;
+    flex-direction: row !important;
   }
+
   .icon {
     margin-left: 0.75em;
     margin-right: 0.75em;

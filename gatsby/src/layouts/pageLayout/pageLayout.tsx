@@ -47,11 +47,15 @@ const PageLayout: React.FC<pageLayoutProps> = ({ children, pageTitle }) => (
           <div className={[styles['page'], 'wrapper d-flex align-items-stretch'].join(' ')}>
             <Sidebar />
             <Container>
-              <Row>
-                <Col md={12}>
-                  <h2> {pageTitle} </h2>
-                </Col>
-              </Row>
+              {pageTitle != 'home' ? (
+                <Row>
+                  <Col md={12}>
+                    <h2> {pageTitle} </h2>
+                  </Col>
+                </Row>
+              ) : (
+                <div></div>
+              )}
               {children}
             </Container>
           </div>
@@ -63,16 +67,21 @@ const PageLayout: React.FC<pageLayoutProps> = ({ children, pageTitle }) => (
               <Row>
                 <Sidebar />
               </Row>
-              <Row>
-                <Col md={12}>
-                  <h2> {pageTitle} </h2>
-                </Col>
-              </Row>
-              {children}
+              <div className={styles.content}>
+                {pageTitle != 'home' ? (
+                  <Row>
+                    <Col md={12}>
+                      <h2> {pageTitle} </h2>
+                    </Col>
+                  </Row>
+                ) : (
+                  <div></div>
+                )}
+                {children}
+              </div>
             </Container>
           </div>
         </div>
-
       </>
     )}
   />

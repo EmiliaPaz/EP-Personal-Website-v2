@@ -2,19 +2,17 @@ import * as React from 'react'
 import { Row, Col } from 'react-bootstrap'
 
 import PageLayout from '../layouts/pageLayout/pageLayout'
+import styles from '../layouts/pageLayout/pageLayout.module.scss'
 
 import face from '../assets/face.png'
 
 const IndexPage = () => (
-  <PageLayout pageTitle="">
-    <Row className="d-flex flex-wrap h-100 align-items-center align-content-center">
+  <PageLayout pageTitle="home">
+    <Row className={[styles['home'], 'd-flex flex-wrap h-100 align-items-center align-content-center'].join(' ')}>
       <Col md={{ span: 6, offset: 1 }}>
         <Row>
-          <h1>Hi,</h1>
-        </Row>
-        <Row>
           <h1>
-            I'm <span> Emilia Paz </span>
+            Emilia <span> Paz </span>
           </h1>
         </Row>
         <Row>

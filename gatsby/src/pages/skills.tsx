@@ -100,7 +100,7 @@ export default class Skills extends React.Component {
     let designSkillsHTML: any[] = []
     this.designSkills.forEach(skill => {
       designSkillsHTML.push(
-        <Col md={2} key={skill.skill}>
+        <Col xs={6} sm={4} md={2} key={skill.skill}>
           <PercentageCircle skill={skill.skill} percentage={skill.percentage} circleClass={skill.circleClass} />
         </Col>
       )
@@ -112,7 +112,7 @@ export default class Skills extends React.Component {
     let devSkillsHTML: any[] = []
     this.devSkills.forEach(skill => {
       devSkillsHTML.push(
-        <Col md={2} key={skill.skill}>
+        <Col xs={6} sm={4} md={2} key={skill.skill}>
           <PercentageCircle skill={skill.skill} percentage={skill.percentage} circleClass={skill.circleClass} />
         </Col>
       )

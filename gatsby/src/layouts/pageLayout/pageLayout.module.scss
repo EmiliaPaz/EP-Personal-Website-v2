@@ -1,11 +1,17 @@
 @import '../../styles/variables.scss';
 
+html {
+  background-color: $background-primary;
+}
+
 .page {
   background-color: $background-primary;
 }
+
 .large-screen {
   display: block;
 }
+
 .small-screen {
   display: none;
 }
@@ -69,8 +75,28 @@ li {
   .large-screen {
     display: none;
   }
+
   .small-screen {
     display: block;
+  }
+
+  .home {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+
+    h5 {
+      text-align: center !important;
+    }
+
+    img {
+      display: none
+    }
+  }
+
+  .content {
+    padding-top: 74px;
+    z-index: -1;
   }
 
   h1 {
@@ -102,10 +128,4 @@ li {
     font-size: $mobile-body-font-size;
     line-height: $mobile-body-line-height;
   }
-}
-
-
-/* iPads (portrait and landscape)  */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  /* Styles */
 }

@@ -17,7 +17,6 @@ const PercentageCircle: React.FC<percentageCircleProps> = ({ skill, percentage, 
         a 15.9155 15.9155 0 0 1 0 -31.831"
       />
       <path
-        // className={styles['circle']}
         className={[styles['circle'], styles[circleClass]].join(' ')}
         strokeDasharray={percentage}
         d="M18 2.0845
