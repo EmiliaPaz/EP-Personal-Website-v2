@@ -14,7 +14,7 @@ const AboutLinks = () => (
       </a>
     </Col>
     <Col xs md={2}>
-      <a href="https://drive.google.com/file/d/1InXRCDIYNpoAHksJjo9gXaBBKYChW3Nb/view?usp=sharing">
+      <a href="https://drive.google.com/file/d/1geH1vXBgEh1JPyWElqaBLR6V6yKd0_PG/view?usp=sharing">
         <img className={styles.img} src={resume}></img>
       </a>
     </Col>

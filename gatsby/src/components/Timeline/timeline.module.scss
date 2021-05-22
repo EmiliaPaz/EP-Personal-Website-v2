@@ -2,7 +2,7 @@
 
 .timeline {
   overflow: hidden;
-  position: relative
+  position: relative;
 }
 
 // .timeline:after,
@@ -14,20 +14,20 @@
 // }
 
 .timeline:before {
-  content: "";
+  content: '';
   width: 3px;
   height: 100%;
   background: $material-fill-primary;
   position: absolute;
   top: 30px;
-  left: 50%
+  left: 50%;
 }
 
 .entry {
   width: 50%;
   float: left;
   padding-right: 30px;
-  position: relative
+  position: relative;
 }
 
 .timeline-icon {
@@ -38,7 +38,7 @@
   border: 3px solid $accent-primary;
   position: absolute;
   top: 5.5%;
-  right: -17.5px
+  right: -17.5px;
 }
 
 .title {
@@ -59,12 +59,12 @@
 }
 
 .title:before {
-  content: "";
+  content: '';
   border-top: 35px solid rgba($accent-primary, 0.8);
   border-left: 35px solid transparent;
   position: absolute;
   bottom: -35px;
-  left: 0
+  left: 0;
 }
 
 .content {
@@ -79,7 +79,7 @@
 
   .location {
     font-weight: 800;
-    margin: 0 0 10px
+    margin: 0 0 10px;
   }
 
   .date {
@@ -87,14 +87,13 @@
   }
 }
 
-
 .entry:nth-child(2n) {
-  padding: 0 0 0 30px
+  padding: 0 0 0 30px;
 }
 
 .entry:nth-child(2n) .timeline-icon {
   right: auto;
-  left: -14.5px
+  left: -14.5px;
 }
 
 .entry:nth-child(2n) .title {
@@ -106,29 +105,29 @@
   border-left: none;
   border-right: 35px solid transparent;
   left: auto;
-  right: 0
+  right: 0;
 }
 
 .entry:nth-child(2n) .content {
   text-align: right;
-  margin: 0 35px 0 45px
+  margin: 0 35px 0 45px;
 }
 
 .entry:nth-child(2) {
-  margin-top: 170px
+  margin-top: 170px;
 }
 
 .entry:nth-child(odd) {
-  margin: -175px 0 0
+  margin: -175px 0 0;
 }
 
 .entry:nth-child(even) {
-  margin-bottom: 80px
+  margin-bottom: 80px;
 }
 
 .entry:first-child,
 .entry:last-child:nth-child(even) {
-  margin: 0
+  margin: 0;
 }
 
 .entry:nth-child(2n) .timeline-icon {
@@ -163,50 +162,50 @@
 //   border-top-color: #f2aab3
 // }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
   .timeline {
-    overflow: visible
+    overflow: visible;
   }
 
   .timeline:before {
     top: 0;
-    left: 0
+    left: 0;
   }
 
   .entry:nth-child(2),
   .entry:nth-child(even),
   .entry:nth-child(odd) {
-    margin: 0
+    margin: 0;
   }
 
   .entry {
     width: 100%;
     float: none;
     padding: 0 0 0 30px;
-    margin-bottom: 20px !important
+    margin-bottom: 20px !important;
   }
 
   .entry:last-child {
-    margin: 0 !important
+    margin: 0 !important;
   }
 
   .timeline-icon {
     right: auto;
-    left: -14.5px
+    left: -14.5px;
   }
 
   .title {
-    border-radius: 50px 0 0 50px
+    border-radius: 50px 0 0 50px;
   }
 
   .title:before {
     border-left: none;
     border-right: 35px solid transparent;
     left: auto;
-    right: 0
+    right: 0;
   }
 
   .content {
-    margin: 0 35px 0 45px
+    margin: 0 35px 0 45px;
   }
 }

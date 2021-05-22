@@ -12,6 +12,7 @@ import datascience from '../assets/datascience.png'
 import datamusic from '../assets/datamusic.png'
 import gitmpse from '../assets/gitmpse.png'
 import minesweeper from '../assets/minesweeper.png'
+import pente from '../assets/pente.png'
 import personalweb from '../assets/personalweb.png'
 
 export default class Projects extends React.Component {
@@ -82,6 +83,14 @@ export default class Projects extends React.Component {
       technologies: ['JavaScript', 'HTML', 'CSS'],
       imageSrc: minesweeper,
       link: 'https://github.com/tonyponyexpress/minesweeper-game'
+    },
+    {
+      title: 'Pente',
+      date: 'March 2020',
+      description: 'Website implementation of Pente.',
+      technologies: ['Ruby on Rails', 'Bootstrap'],
+      imageSrc: pente,
+      link: 'http://www.pente.club/'
     },
     {
       title: 'Personal Website',

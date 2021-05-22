@@ -65,6 +65,11 @@ export default class Skills extends React.Component {
       circleClass: 'circle-advanced'
     },
     {
+      skill: 'Git',
+      percentage: '80, 100',
+      circleClass: 'circle-advanced'
+    },
+    {
       skill: 'MySQL',
       percentage: '30, 100',
       circleClass: 'circle-beginner'
